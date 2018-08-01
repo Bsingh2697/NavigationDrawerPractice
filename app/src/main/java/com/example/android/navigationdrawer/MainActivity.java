@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Log.v("MainAcivity", "Id:" + id);
         }
 
-        return false;
+        item.setChecked(true);
+        mDrawerLayout.closeDrawers();
+        return true;
     }
 }
 
